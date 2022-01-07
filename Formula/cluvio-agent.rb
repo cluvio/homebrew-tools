@@ -5,20 +5,20 @@ class CluvioAgent < Formula
   license "MIT"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/cluvio/agent/releases/download/untagged-7bbb70f20b61c1fc77be/cluvio-agent-0.1.0-x86_64-apple-darwin.tar.xz"
-    sha256 "d4876c71a4e5b1d1bc77946a6d2387e05bb8d07e57f33526be779b7e723fdff0"
+    url "https://github.com/cluvio/agent/releases/download/untagged-032341bd052947bffbb9/cluvio-agent-0.1.0-x86_64-apple-darwin.tar.xz"
+    sha256 "9c8267a8f46d925ce73049065bb2539adfd36456c8f562b0a7c3fba601cecb95"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/cluvio/agent/releases/download/untagged-7bbb70f20b61c1fc77be/cluvio-agent-0.1.0-aarch64-apple-darwin.tar.xz"
-    sha256 "979ac92c4435b833f4d3407d417cea1e659fb3d92a997505435babb9d4f8ffb2"
+    url "https://github.com/cluvio/agent/releases/download/untagged-032341bd052947bffbb9/cluvio-agent-0.1.0-aarch64-apple-darwin.tar.xz"
+    sha256 "5d5ab038b6f8fcacd0a63a43985488645f04f6007977a3e3577c0b0c3df7cf53"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/cluvio/agent/releases/download/untagged-7bbb70f20b61c1fc77be/cluvio-agent-0.1.0-x86_64-unknown-linux-musl.tar.xz"
-    sha256 "936b7c543e82154868fa09114651abd53bc1ef9d1962d0d57fb174e51731a12d"
+    url "https://github.com/cluvio/agent/releases/download/untagged-032341bd052947bffbb9/cluvio-agent-0.1.0-x86_64-unknown-linux-musl.tar.xz"
+    sha256 "46915382f1559480d4b2c12cb63aae85a39486b2b3259251fb9c935f02ece0a4"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/cluvio/agent/releases/download/untagged-7bbb70f20b61c1fc77be/cluvio-agent-0.1.0-aarch64-unknown-linux-musl.tar.xz"
-    sha256 "2782e83176c1e6073adcf8072fc3e3c932918f74a375d8e61c26c91a18bfb8df"
+    url "https://github.com/cluvio/agent/releases/download/untagged-032341bd052947bffbb9/cluvio-agent-0.1.0-aarch64-unknown-linux-musl.tar.xz"
+    sha256 "a36f5bbeb0e92a904045fda311cbbc6a5fc2ec634e999c3f72cc3bd5a7a4057b"
   end
 
   def install
