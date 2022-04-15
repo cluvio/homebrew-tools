@@ -1,7 +1,7 @@
 class CluvioAgent < Formula
   desc "Cluvio Agent is a tool that enables Cluvio to connect to databases or services running on your local machine or servers without having to expose them to the internet."
   homepage "https://github.com/cluvio/agent"
-  version "0.1.0"
+  version "1.0.1"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.intel?
