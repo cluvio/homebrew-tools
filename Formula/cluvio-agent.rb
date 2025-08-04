@@ -1,24 +1,24 @@
 class CluvioAgent < Formula
   desc "Cluvio Agent is a tool that enables Cluvio to connect to databases or services running on your local machine or servers without having to expose them to the internet."
   homepage "https://github.com/cluvio/agent"
-  version "1.2.0"
+  version "1.2.1"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/cluvio/agent/releases/download/v1.2.0/cluvio-agent-1.2.0-x86_64-macos.tar.xz"
-    sha256 "169a2687ecb65c77abc712781d2eb732150565c6c7e91e44eebf353cc6466eca"
+    url "https://github.com/cluvio/agent/releases/download/v1.2.1/cluvio-agent-1.2.1-x86_64-macos.tar.xz"
+    sha256 "bc83948653a1f35c34793c4d7c602ced10bb495d0afd9d5f002c6869673f5d41"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/cluvio/agent/releases/download/v1.2.0/cluvio-agent-1.2.0-aarch64-macos.tar.xz"
-    sha256 "dacaa2d8de46e1cacc72f76f2150918e4ea746dae34dfa1b4e9a64c3499f8cbf"
+    url "https://github.com/cluvio/agent/releases/download/v1.2.1/cluvio-agent-1.2.1-aarch64-macos.tar.xz"
+    sha256 "e660cc527e357012a31bbe48bc31ea1f14bef41fa66728393d266afbcb05c948"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/cluvio/agent/releases/download/v1.2.0/cluvio-agent-1.2.0-x86_64-linux.tar.xz"
-    sha256 "a1f6e310f1c4d7f8fe032685253577cd1d801c7a4187e35779e24fb533c72e2d"
+    url "https://github.com/cluvio/agent/releases/download/v1.2.1/cluvio-agent-1.2.1-x86_64-linux.tar.xz"
+    sha256 "cc7dd31b3c0cce8e206aad9b2095464f744a770a9336046f16b6abf19dfea8b6"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/cluvio/agent/releases/download/v1.2.0/cluvio-agent-1.2.0-aarch64-linux.tar.xz"
-    sha256 "9750986f1638183f438ccaf7da035284f84939527828b7721ad3427ab1a99044"
+    url "https://github.com/cluvio/agent/releases/download/v1.2.1/cluvio-agent-1.2.1-aarch64-linux.tar.xz"
+    sha256 "a87340ace2cbdd6817944bcaa9e43dd8143ea3905e2a96aed0b2533297606d6a"
   end
 
   def install
